@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.cli-container {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-bar {
+    background-color: #333;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.terminal-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.close { background-color: #ff5f56; }
+.minimize { background-color: #ffbd2e; }
+.expand { background-color: #27c93f; }
+
+.terminal-title {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.terminal-body {
+    background-color: #1e1e1e;
+    padding: 15px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.output {
+    margin-bottom: 15px;
+}
+
+.command-line {
+    margin-bottom: 5px;
+}
+
+.prompt {
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+.command {
+    color: #f0f0f0;
+}
+
+.response {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.ascii-art {
+    color: #4CAF50;
+    line-height: 1.2;
+    font-size: 0.6rem;
+}
+
+.command-text {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+#command-input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: #f0f0f0;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Content styles */
+.content-section {
+    display: none;
+    margin: 15px 0;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.skill-category {
+    margin-bottom: 15px;
+}
+
+.skill-category h3 {
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+.project-item, .experience-item {
+    margin-bottom: 20px;
+    border-left: 2px solid #4CAF50;
+    padding-left: 10px;
+}
+
+.project-title, .experience-title {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.project-date, .experience-date {
+    color: #aaa;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.contact-info {
+    margin-top: 15px;
+}
+
+.contact-info a {
+    color: #4CAF50;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .ascii-art {
+        font-size: 0.5rem;
+    }
+}
