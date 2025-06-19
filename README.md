@@ -87,7 +87,7 @@ To personalize this portfolio for your own use:
 
 ## 🌐 Live Demo
 
-[View Live Demo](https://rsebany.github.io/portfolio)
+[View Live Demo]([https://rsebany.github.io/portfolio])
 
 ## 📄 License
 
